@@ -8,35 +8,36 @@
 }
 
 .group-card {
-  background: var(--cream-soft);
-  border: 1px solid var(--card-border);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px 22px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
 .group-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow);
+  border-color: var(--blue);
 }
 
 .group-card .badge {
   display: inline-block;
   font-weight: 800;
   font-size: 1.6rem;
-  color: var(--purple);
+  color: var(--blue);
   margin-bottom: 6px;
 }
 
 .group-card h3 { margin: 0 0 8px; font-size: 1.15rem; }
 .group-card p { color: var(--text-muted); font-size: 0.92rem; margin: 0 0 14px; }
-.group-card .types { font-size: 0.82rem; color: var(--purple-dark); font-weight: 700; margin-bottom: 14px; }
-.group-card .card-link { font-weight: 700; color: var(--purple-dark); font-size: 0.9rem; }
+.group-card .types { font-size: 0.82rem; color: var(--blue); font-weight: 700; margin-bottom: 14px; }
+.group-card .card-link { font-weight: 700; color: var(--blue); font-size: 0.9rem; }
 
 /* ---------- 타입 카드 (그룹 상세) ---------- */
 .type-card {
-  background: var(--cream-soft);
-  border: 1px solid var(--card-border);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 26px;
   margin-bottom: 18px;
@@ -44,7 +45,7 @@
 
 .type-card h3 {
   margin: 0 0 6px;
-  color: var(--purple-dark);
+  color: var(--blue);
   font-size: 1.2rem;
 }
 
@@ -63,7 +64,7 @@
 }
 
 .tip-item {
-  background: var(--purple-soft);
+  background: var(--blue-tint);
   border-radius: 14px;
   padding: 18px 20px;
   display: flex;
@@ -73,7 +74,7 @@
 
 .tip-item .tip-num {
   font-weight: 800;
-  color: var(--purple);
+  color: var(--blue);
   flex-shrink: 0;
 }
 
@@ -87,22 +88,22 @@
 .group-nav a {
   padding: 8px 16px;
   border-radius: 999px;
-  border: 1px solid var(--card-border);
+  border: 1px solid var(--border);
   font-weight: 700;
   font-size: 0.88rem;
   color: var(--text-muted);
 }
 
 .group-nav a.current {
-  background: var(--purple);
+  background: var(--blue);
   color: #fff;
-  border-color: var(--purple);
+  border-color: var(--blue);
 }
 
 /* ---------- 자가진단 테스트 ---------- */
 .quiz-progress {
   height: 8px;
-  background: var(--purple-soft);
+  background: var(--blue-tint);
   border-radius: 999px;
   overflow: hidden;
   margin-bottom: 30px;
@@ -110,14 +111,14 @@
 
 .quiz-progress-bar {
   height: 100%;
-  background: var(--purple);
+  background: var(--blue);
   width: 0%;
   transition: width 0.3s;
 }
 
 .quiz-question {
-  background: var(--cream-soft);
-  border: 1px solid var(--card-border);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 26px;
   margin-bottom: 16px;
@@ -136,27 +137,27 @@
 .quiz-option {
   display: block;
   padding: 14px 18px;
-  border: 2px solid var(--card-border);
-  border-radius: 12px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
   cursor: pointer;
   transition: border-color 0.15s, background 0.15s;
   font-size: 0.95rem;
 }
 
-.quiz-option:hover { border-color: var(--purple); }
+.quiz-option:hover { border-color: var(--blue); }
 
 .quiz-option input { margin-right: 10px; }
 
 .quiz-option.selected {
-  border-color: var(--purple);
-  background: var(--purple-soft);
+  border-color: var(--blue);
+  background: var(--blue-tint);
 }
 
 #quiz-result {
   display: none;
   text-align: center;
-  background: var(--cream-soft);
-  border: 1px solid var(--card-border);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 40px 28px;
 }
@@ -164,7 +165,7 @@
 #quiz-result .result-badge {
   font-size: 2.2rem;
   font-weight: 800;
-  color: var(--purple);
+  color: var(--blue);
 }
 
 #quiz-result h2 { margin: 6px 0 10px; }
@@ -184,10 +185,10 @@
   bottom: 28px;
   left: 50%;
   transform: translateX(-50%) translateY(20px);
-  background: var(--purple-dark);
-  color: #fff;
+  background: var(--text-primary);
+  color: var(--bg);
   padding: 12px 22px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   font-weight: 600;
   font-size: 0.9rem;
   opacity: 0;
