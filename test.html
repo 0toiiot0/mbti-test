@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>내 공부유형 자가진단 | MBTI 공부법 연구소</title>
+  <meta name="description" content="10문항 공부 습관 자가진단으로 나의 MBTI 공부유형(NT/NF/SJ/SP)을 확인해보세요." />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">MBTI 공부법 연구소</a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="nt.html">NT형</a></li>
+        <li><a href="nf.html">NF형</a></li>
+        <li><a href="sj.html">SJ형</a></li>
+        <li><a href="sp.html">SP형</a></li>
+        <li><a href="test.html" class="active">유형 테스트</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <span class="eyebrow">공부 습관 자가진단</span>
+      <h1>10가지 질문으로<br />나의 공부유형 찾기</h1>
+      <p>평소 공부하는 방식과 가장 가까운 답을 하나씩 골라주세요. 끝까지 답하면 나의 공부유형 그룹(NT·NF·SJ·SP)을 알려드려요.</p>
+    </section>
+
+    <section class="section container">
+      <div class="section-title-wrap">
+        <div class="quiz-progress">
+          <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
+        </div>
+        <p id="quiz-progress-label" style="text-align:center; color:var(--text-muted); font-size:0.9rem; margin-top:-16px;">0 / 10 문항 응답</p>
+      </div>
+
+      <form id="quiz-form"></form>
+
+      <div class="quiz-submit-wrap">
+        <button type="button" id="quiz-submit-btn" class="btn btn-primary">결과 확인하기</button>
+      </div>
+
+      <div id="quiz-result">
+        <span class="result-badge">NT</span>
+        <h2>결과 그룹명</h2>
+        <p class="result-types" style="font-weight:700; color:var(--purple-dark); margin-bottom: 4px;"></p>
+        <p class="result-desc">결과 설명</p>
+        <p class="result-scores" style="font-size:0.85rem; color:var(--text-muted); margin-top:-10px;"></p>
+        <div class="result-actions">
+          <a href="nt.html" class="btn btn-primary btn-group-page">그룹 페이지로 이동</a>
+          <button type="button" id="share-btn" class="btn btn-outline">🔗 친구에게 공유하기</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2026 MBTI 공부법 연구소. 이 자가진단은 재미를 위한 간이 테스트로, 공식 MBTI 검사가 아닙니다.</div>
+  </footer>
+
+  <div class="share-toast" id="share-toast"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/test.js"></script>
+</body>
+</html>
