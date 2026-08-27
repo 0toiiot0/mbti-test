@@ -206,6 +206,10 @@ function showResult(topGroup, scores) {
 
   window.__quizResultInfo = info;
   resultBox.scrollIntoView({ behavior: "smooth" });
+
+  if (typeof gtag === "function") {
+    gtag("event", "test_complete", { group: topGroup });
+  }
 }
 
 function handleShare() {
